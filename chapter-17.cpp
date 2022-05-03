@@ -6,7 +6,7 @@ using namespace std;
 
 ostream& print_array(ostream& os, int* a, int n)
 {
-    for (int i = 0; i < n; ++i) os << a[i] << '\n';
+    for (int i = 0; i < n; ++i) os << a[i] << '\n';//for loop and printing array a
     return os;
 }
 
@@ -29,7 +29,7 @@ try {
         ++x; //increase 100 by 1
     }
 
-    print_array(cout, arr, 20); //operator overloading to pring the array
+    print_array(cout, arr, 20); //operator overloading to print the array
     delete[] arr; //deallocate pointer of array to prevent memory leak
 
     vector<int> v10(10);
@@ -47,6 +47,6 @@ catch (exception& e) {
     return 1;
 }
 catch (...) {
-    cerr << "Unknown exception\n";
+    cerr << "Unknown exception\n";// this is for any errors
     return 2;
 }
