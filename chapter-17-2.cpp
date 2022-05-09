@@ -15,7 +15,8 @@ int main(){
 	//Print out the value of p1 and of the int it points to
 	cout<< "pointer "<<p1<<" points to "<<*p1<<"\n";
 	
-	//Allocate an array of seven ints; initialize it to 1, 2, 4, 8, etc.; and assign its address to a variable p2.	int* p2= new int[7];
+	//Allocate an array of seven ints; initialize it to 1, 2, 4, 8, etc.; and assign its address to a variable p2.	
+	int* p2= new int[7];
 	x=1;
 	for(int i=0; i<7; ++i){
 		p2[i]=x;
